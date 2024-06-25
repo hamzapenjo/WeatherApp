@@ -107,7 +107,7 @@ class MainActivity : ComponentActivity() {
         ) { innerPadding ->
             Box(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
                 when (selectedItem) {
-                    0 -> IntroScreen { selectedItem = 1 } // Navigates to HomeScreen after intro
+                    0 -> IntroScreen { selectedItem = 1 }
                     1 -> HomeScreen(weatherService, apiKey, city, temperature, weatherIconUrl, onCityChange = { city = it }, onTemperatureChange = { temperature = it }, onIconUrlChange = { weatherIconUrl = it })
                     2 -> FavoritesScreen(weatherService, apiKey)
                 }
