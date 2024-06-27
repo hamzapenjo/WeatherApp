@@ -53,7 +53,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             WeatherAppFinTheme {
                 Surface(color = MaterialTheme.colorScheme.background) {
-                    MainScreen(weatherService, "931ba88b5cecc67ee0258cda163ecc60")
+                    MainScreen(weatherService, "YOUR-API")
                 }
             }
         }
